@@ -1,0 +1,44 @@
+{
+  "name": "live-caption",
+  "version": "1.0.0",
+  "description": "Real-time bilingual (zh/en) live captioning and Chinese translation, fully local — SenseVoice + streaming zipformer + Ollama.",
+  "type": "module",
+  "bin": {
+    "live-caption": "captioner.mjs"
+  },
+  "scripts": {
+    "start": "node captioner.mjs",
+    "setup:engine": "node setup.mjs",
+    "setup:model": "node setup-model.mjs",
+    "serve": "node serve.mjs",
+    "eval": "node eval.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "optionalDependencies": {
+    "sherpa-onnx-darwin-arm64": "1.13.8"
+  },
+  "dependencies": {
+    "sherpa-onnx-node": "1.13.8"
+  },
+  "keywords": [
+    "live-caption",
+    "speech-recognition",
+    "asr",
+    "translation",
+    "sherpa-onnx",
+    "sensevoice",
+    "ollama",
+    "apple-silicon",
+    "bilingual",
+    "zh-en"
+  ],
+  "license": "MIT",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ]
+}

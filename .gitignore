@@ -1,0 +1,40 @@
+# ── 依赖与构建产物 ──
+node_modules/
+mic2pcm
+mcache/
+
+# ── 模型权重（约 440MB，用 setup-model.mjs 下载）──
+models/
+
+# ── 运行产物：转写内容、日志、字幕状态 ──
+# 这些可能包含你实际讲话/讲座的内容，绝对不要提交
+*.jsonl
+*.log
+live.json
+.docx-payload.json
+翻译文件/
+*.docx
+
+# ── 备份与临时文件 ──
+*.bak
+*.bak-*
+*.bak.*
+*.tmp
+*.pcm
+*.wav
+*.aiff
+
+# ── Python ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── macOS ──
+.DS_Store
+._*
+
+# ── 编辑器 ──
+.vscode/
+.idea/
+*.swp
